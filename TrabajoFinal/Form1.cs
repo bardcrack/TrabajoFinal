@@ -12,9 +12,19 @@ namespace TrabajoFinal
 {
     public partial class Form1 : Form
     {
+
+
         public Form1()
         {
             InitializeComponent();
+        }
+        private void Onload() {
+            Form2 LoginForm = new Form2();
+            LoginForm.Show();
+        }
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

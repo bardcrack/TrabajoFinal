@@ -1,2 +1,11 @@
 C:\Users\acces\Documents\Ingenieria en Sistemas UES\Programacion I\TrabajoFinal\TrabajoFinal\bin\Debug\TrabajoFinal.exe.config
 C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\bin\Debug\TrabajoFinal.exe.config
+C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\bin\Debug\TrabajoFinal.exe
+C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\bin\Debug\TrabajoFinal.pdb
+C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.csprojResolveAssemblyReference.cache
+C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.Form1.resources
+C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.Properties.Resources.resources
+C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.csproj.GenerateResource.Cache
+C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.exe
+C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.pdb
+C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.Form2.resources
