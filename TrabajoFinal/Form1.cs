@@ -22,6 +22,11 @@ namespace TrabajoFinal
             Form2 LoginForm = new Form2();
             LoginForm.Show();
         }
+        /// <summary>
+        /// Se utilizara para cerrar el formulario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();

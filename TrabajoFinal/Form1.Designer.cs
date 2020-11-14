@@ -33,24 +33,24 @@
             this.miPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tarjetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tarjetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaTarjetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarMovimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.configurarNuevoTipoDeTarjetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verTransaccionesPorPeriodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verAperturasPorPeriodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cantidadDePuntosAcumuladosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configurarNuevoTipoDeTarjetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +65,7 @@
             this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(697, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(437, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,13 +81,13 @@
             // miPerfilToolStripMenuItem
             // 
             this.miPerfilToolStripMenuItem.Name = "miPerfilToolStripMenuItem";
-            this.miPerfilToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.miPerfilToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.miPerfilToolStripMenuItem.Text = "Mi perfil";
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -101,28 +101,6 @@
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
-            // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoClienteToolStripMenuItem,
-            this.buscarClienteToolStripMenuItem,
-            this.editarClienteToolStripMenuItem,
-            this.eliminarClienteToolStripMenuItem});
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            // 
-            // tarjetasToolStripMenuItem
-            // 
-            this.tarjetasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevaTarjetaToolStripMenuItem,
-            this.generarMovimientoToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.configurarNuevoTipoDeTarjetaToolStripMenuItem});
-            this.tarjetasToolStripMenuItem.Name = "tarjetasToolStripMenuItem";
-            this.tarjetasToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.tarjetasToolStripMenuItem.Text = "Tarjetas";
             // 
             // nuevoUsuarioToolStripMenuItem
             // 
@@ -148,6 +126,17 @@
             this.buscarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.buscarUsuarioToolStripMenuItem.Text = "Ver Usuarios";
             // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoClienteToolStripMenuItem,
+            this.buscarClienteToolStripMenuItem,
+            this.editarClienteToolStripMenuItem,
+            this.eliminarClienteToolStripMenuItem});
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            // 
             // nuevoClienteToolStripMenuItem
             // 
             this.nuevoClienteToolStripMenuItem.Name = "nuevoClienteToolStripMenuItem";
@@ -172,6 +161,17 @@
             this.eliminarClienteToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.eliminarClienteToolStripMenuItem.Text = "Eliminar Cliente";
             // 
+            // tarjetasToolStripMenuItem
+            // 
+            this.tarjetasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaTarjetaToolStripMenuItem,
+            this.generarMovimientoToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.configurarNuevoTipoDeTarjetaToolStripMenuItem});
+            this.tarjetasToolStripMenuItem.Name = "tarjetasToolStripMenuItem";
+            this.tarjetasToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.tarjetasToolStripMenuItem.Text = "Tarjetas";
+            // 
             // nuevaTarjetaToolStripMenuItem
             // 
             this.nuevaTarjetaToolStripMenuItem.Name = "nuevaTarjetaToolStripMenuItem";
@@ -183,6 +183,17 @@
             this.generarMovimientoToolStripMenuItem.Name = "generarMovimientoToolStripMenuItem";
             this.generarMovimientoToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.generarMovimientoToolStripMenuItem.Text = "Generar Transacción";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(240, 6);
+            // 
+            // configurarNuevoTipoDeTarjetaToolStripMenuItem
+            // 
+            this.configurarNuevoTipoDeTarjetaToolStripMenuItem.Name = "configurarNuevoTipoDeTarjetaToolStripMenuItem";
+            this.configurarNuevoTipoDeTarjetaToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.configurarNuevoTipoDeTarjetaToolStripMenuItem.Text = "Configurar nuevo tipo de tarjeta";
             // 
             // reportesToolStripMenuItem
             // 
@@ -212,22 +223,11 @@
             this.cantidadDePuntosAcumuladosToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.cantidadDePuntosAcumuladosToolStripMenuItem.Text = "Cantidad de puntos acumulados";
             // 
-            // configurarNuevoTipoDeTarjetaToolStripMenuItem
-            // 
-            this.configurarNuevoTipoDeTarjetaToolStripMenuItem.Name = "configurarNuevoTipoDeTarjetaToolStripMenuItem";
-            this.configurarNuevoTipoDeTarjetaToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
-            this.configurarNuevoTipoDeTarjetaToolStripMenuItem.Text = "Configurar nuevo tipo de tarjeta";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(240, 6);
-            // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 336);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 362);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(697, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(437, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -235,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 358);
+            this.ClientSize = new System.Drawing.Size(437, 384);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
