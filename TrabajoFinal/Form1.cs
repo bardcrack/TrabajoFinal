@@ -13,6 +13,7 @@ namespace TrabajoFinal
 {
     public partial class Form1 : Form
     {
+        
         public String UserRoot = "root";
         public String PasswordRoot = "root";
         public int intentosFallidos = 3;
@@ -21,8 +22,9 @@ namespace TrabajoFinal
         public Form1()
         {
             InitializeComponent();
-            groupNewUser.Visible = false;
+            this.CenterToScreen();
             menuStrip1.Visible = false;
+            this.hideAllGroupElements();
             try
             {
                 cn.Open();
@@ -32,6 +34,11 @@ namespace TrabajoFinal
                 MessageBox.Show("Error: Conexion a la base de datos no establecida" + ex);
             }
         }
+        private void hideAllGroupElements() {
+            groupNewUser.Visible = false;
+            groupAllUsers.Visible = false;
+        }
+
         /// <summary>
         /// Se utilizara para cerrar el formulario.
         /// </summary>
@@ -46,7 +53,7 @@ namespace TrabajoFinal
         {
             this.Close();
             cn.Close();
-            dataGridViewUser.DataSource = "";
+            ///dataGridViewUser.DataSource = "";
             MessageBox.Show("Se ha cortado la conexion a la base");
         }
 
@@ -55,6 +62,7 @@ namespace TrabajoFinal
             if (txtUser.Text == UserRoot && txtPassword.Text== PasswordRoot) {
                 groupLogin.Visible = false;
                 menuStrip1.Visible = true;
+                tabControl1.Visible = true;
             }
             else {
                 MessageBox.Show("Lo sentimos credenciales incorrectas vuelve a intentarlo nuevamente.");
@@ -65,7 +73,7 @@ namespace TrabajoFinal
                     {
                         this.Close();
                         cn.Close();
-                        dataGridViewUser.DataSource = "";
+                        ///dataGridViewUser.DataSource = "";
                         MessageBox.Show("Se ha cortado la conexion a la base");
                     }
                 }
@@ -75,6 +83,8 @@ namespace TrabajoFinal
         private void nuevoUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             groupNewUser.Visible = true;
+            tabControl1.SelectTab(0);
+            this.resetFormNewUser();
             this.reloadDataGridView();
         }
         public void reloadDataGridView() {
@@ -85,8 +95,8 @@ namespace TrabajoFinal
             OleDbDataAdapter da = new OleDbDataAdapter(command);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            dataGridViewUser.DataSource = dt;
-            dataGridViewUser.Refresh();
+            ///dataGridViewUser.DataSource = dt;
+            ///dataGridViewUser.Refresh();
         }
         private void btnNewUser_Click(object sender, EventArgs e)
         {
@@ -99,13 +109,21 @@ namespace TrabajoFinal
                 var fechaActual = DateTime.Now;
                 this.userTableAdapter.InsertUser(fechaActual.Date, user_nicknameTextBox.Text, user_emailTextBox.Text, user_passwordTextBox.Text, user_firstnameTextBox.Text, user_lastnameTextBox.Text, isEmployee);
                 this.reloadDataGridView();
+                this.resetFormNewUser();
                 MessageBox.Show("Registro almacenado con exito", "Operacion exitosa");
             }
             else {
                 MessageBox.Show("Todos los campos son requeridos","Campos requeridos");
             }
         }
-
+        private void resetFormNewUser() {
+            user_nicknameTextBox.Text = "";
+            user_emailTextBox.Text = "";
+            user_passwordTextBox.Text = "";
+            user_firstnameTextBox.Text = "";
+            user_lastnameTextBox.Text = "";
+            isEmployeeCheckBox.Checked = false;
+        }
         private void userBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -119,6 +137,18 @@ namespace TrabajoFinal
             // TODO: esta línea de código carga datos en la tabla 'trabajoFinalDataSet.user' Puede moverla o quitarla según sea necesario.
             this.userTableAdapter.Fill(this.trabajoFinalDataSet.user);
 
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buscarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
+            this.hideAllGroupElements();
+            groupAllUsers.Visible = true;
         }
     }
 }
