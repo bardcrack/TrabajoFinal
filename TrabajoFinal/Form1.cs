@@ -17,7 +17,7 @@ namespace TrabajoFinal
         public String UserRoot = "root";
         public String PasswordRoot = "root";
         public int intentosFallidos = 3;
-        OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\acces\\Documents\\xampp\\htdocs\\TrabajoFinal\\TrabajoFinal\\bin\\Debug\\TrabajoFinal.mdb");
+        ///OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\acces\\Documents\\xampp\\htdocs\\TrabajoFinal\\TrabajoFinal\\bin\\Debug\\TrabajoFinal.mdb");
 
         public Form1()
         {
@@ -25,18 +25,18 @@ namespace TrabajoFinal
             this.CenterToScreen();
             menuStrip1.Visible = false;
             this.hideAllGroupElements();
-            try
+            /*try
             {
                 cn.Open();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: Conexion a la base de datos no establecida" + ex);
-            }
+            }*/
         }
         private void hideAllGroupElements() {
-            groupNewUser.Visible = false;
-            groupAllUsers.Visible = false;
+            /*groupNewUser.Visible = false;
+            groupAllUsers.Visible = false;*/
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace TrabajoFinal
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-            cn.Close();
+            ///cn.Close();
             ///dataGridViewUser.DataSource = "";
             MessageBox.Show("Se ha cortado la conexion a la base");
         }
@@ -63,6 +63,8 @@ namespace TrabajoFinal
                 groupLogin.Visible = false;
                 menuStrip1.Visible = true;
                 tabControl1.Visible = true;
+                tabControl2.Visible = true;
+                this.resetFormNewUser();
             }
             else {
                 MessageBox.Show("Lo sentimos credenciales incorrectas vuelve a intentarlo nuevamente.");
@@ -72,7 +74,7 @@ namespace TrabajoFinal
                     if (results == DialogResult.OK)
                     {
                         this.Close();
-                        cn.Close();
+                        //cn.Close();
                         ///dataGridViewUser.DataSource = "";
                         MessageBox.Show("Se ha cortado la conexion a la base");
                     }
@@ -82,46 +84,31 @@ namespace TrabajoFinal
 
         private void nuevoUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            groupNewUser.Visible = true;
             tabControl1.SelectTab(0);
-            this.resetFormNewUser();
             this.reloadDataGridView();
         }
         public void reloadDataGridView() {
-            OleDbCommand command = new OleDbCommand();
-            command.Connection = cn;
-            string sql = "SELECT * FROM [user]";
+            /*OleDbCommand command = new OleDbCommand();
+            //command.Connection = cn;
+            string sql = "SELECT id_user,date_created,user_nickname, user_email,user_firstname, user_lastname,isEmployee FROM [user]";
             command.CommandText = sql;
             OleDbDataAdapter da = new OleDbDataAdapter(command);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            ///dataGridViewUser.DataSource = dt;
-            ///dataGridViewUser.Refresh();
+            userDataGridView.DataSource = dt;
+            userDataGridView.Refresh();*/
+            //cn.Close();
         }
         private void btnNewUser_Click(object sender, EventArgs e)
         {
-            bool isEmployee = false;
-            if (user_nicknameTextBox.Text !="" && user_emailTextBox.Text!="" && user_passwordTextBox.Text!=""  && user_firstnameTextBox.Text!="" && user_lastnameTextBox.Text!="")
-            {
-                if (isEmployeeCheckBox.Checked) {
-                    isEmployee = true;
-                }
-                var fechaActual = DateTime.Now;
-                this.userTableAdapter.InsertUser(fechaActual.Date, user_nicknameTextBox.Text, user_emailTextBox.Text, user_passwordTextBox.Text, user_firstnameTextBox.Text, user_lastnameTextBox.Text, isEmployee);
-                this.reloadDataGridView();
-                this.resetFormNewUser();
-                MessageBox.Show("Registro almacenado con exito", "Operacion exitosa");
-            }
-            else {
-                MessageBox.Show("Todos los campos son requeridos","Campos requeridos");
-            }
+           
         }
         private void resetFormNewUser() {
-            user_nicknameTextBox.Text = "";
-            user_emailTextBox.Text = "";
-            user_passwordTextBox.Text = "";
-            user_firstnameTextBox.Text = "";
-            user_lastnameTextBox.Text = "";
+            txtNewNickname.Text = "";
+            txtNewEmail.Text = "";
+            txtNewPassword.Text = "";
+            txtNewFirstName.Text = "";
+            txtNewLastName.Text = "";
             isEmployeeCheckBox.Checked = false;
         }
         private void userBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -149,6 +136,33 @@ namespace TrabajoFinal
             tabControl1.SelectTab(1);
             this.hideAllGroupElements();
             groupAllUsers.Visible = true;
+        }
+
+        private void groupNewUser_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNewUser_Click_1(object sender, EventArgs e)
+        {
+            bool isEmployee = false;
+            if (txtNewNickname.Text != "" && txtNewEmail.Text != "" && txtNewPassword.Text != "" && txtNewFirstName.Text != "" && txtNewLastName.Text != "")
+            {
+                if (isEmployeeCheckBox.Checked)
+                {
+                    isEmployee = true;
+                }
+                var fechaActual = DateTime.Now;
+                this.userTableAdapter.InsertUser(fechaActual.Date, txtNewNickname.Text, txtNewEmail.Text, txtNewPassword.Text, txtNewFirstName.Text, txtNewLastName.Text, isEmployee);
+                /*this.reloadDataGridView();
+                this.resetFormNewUser();*/
+                this.userTableAdapter.Fill(this.trabajoFinalDataSet.user);
+                MessageBox.Show("Registro almacenado con exito", "Operacion exitosa");
+            }
+            else
+            {
+                MessageBox.Show("Todos los campos son requeridos", "Campos requeridos");
+            }
         }
     }
 }
