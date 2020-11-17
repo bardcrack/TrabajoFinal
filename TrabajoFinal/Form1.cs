@@ -17,6 +17,7 @@ namespace TrabajoFinal
         public String UserRoot = "root";
         public String PasswordRoot = "root";
         public int intentosFallidos = 3;
+        TabPage current;
         ///OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\acces\\Documents\\xampp\\htdocs\\TrabajoFinal\\TrabajoFinal\\bin\\Debug\\TrabajoFinal.mdb");
 
         public Form1()
@@ -25,6 +26,7 @@ namespace TrabajoFinal
             this.CenterToScreen();
             menuStrip1.Visible = false;
             this.hideAllGroupElements();
+            tabControl1.Selecting += new TabControlCancelEventHandler(tabControl1_Selecting);
             /*try
             {
                 cn.Open();
@@ -33,6 +35,19 @@ namespace TrabajoFinal
             {
                 MessageBox.Show("Error: Conexion a la base de datos no establecida" + ex);
             }*/
+        }
+        void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            current = (sender as TabControl).SelectedTab;
+            String TabName = current.ToString().Replace("TabPage: {","").Replace("}","");
+            if(TabName == "Editar") {
+                txtSearchNickname.Enabled= false;
+                txtSearchEmail.Enabled = false;
+                txtSearchFirstname.Enabled = false;
+                txtSearchLastname.Enabled = false;
+                txtSearchPassword.Enabled = false;
+            }
+            label13.Text = TabName;
         }
         private void hideAllGroupElements() {
             /*groupNewUser.Visible = false;
@@ -162,6 +177,44 @@ namespace TrabajoFinal
             else
             {
                 MessageBox.Show("Todos los campos son requeridos", "Campos requeridos");
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            String codigoUser = txtCodigoUser.Text;
+            if (codigoUser!="") {
+                DialogResult result = MessageBox.Show("¿Seguro que deseas eliminar a este usuario?","Confirmacion de accion", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes) {
+                    this.userTableAdapter.DeleteUser(int.Parse(codigoUser));
+                    this.userTableAdapter.Fill(this.trabajoFinalDataSet.user);
+                    MessageBox.Show("Usuario eliminado con exito", "Operacion exitosa");
+                    txtCodigoUser.Text = "";
+                }
+                else {
+                    MessageBox.Show("No ha pasado nada, la operacion fue cancelada.", "Todo bien");
+                }
+            }
+            else {
+                MessageBox.Show("El codigo de usuario es requerido","Campos obligatorios");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            String codigoUser = txtSearchUserByCode.Text;
+            if (codigoUser!="") {
+                this.userTableAdapter.SearchUserById(this.trabajoFinalDataSet.user, int.Parse(codigoUser));
+                //this.userTableAdapter.Fill(this.trabajoFinalDataSet.user);
+                MessageBox.Show(this.trabajoFinalDataSet.user.ToString());
+                txtSearchNickname.Enabled = true;
+                txtSearchEmail.Enabled = true;
+                txtSearchFirstname.Enabled = true;
+                txtSearchLastname.Enabled = true;
+                txtSearchPassword.Enabled = true;
+            }
+            else {
+                MessageBox.Show("El codigo del usuario es requerido","Campos requeridos");
             }
         }
     }

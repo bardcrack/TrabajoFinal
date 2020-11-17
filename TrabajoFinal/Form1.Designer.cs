@@ -62,16 +62,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupLogin = new System.Windows.Forms.GroupBox();
-            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.trabajoFinalDataSet = new TrabajoFinal.TrabajoFinalDataSet();
-            this.userTableAdapter = new TrabajoFinal.TrabajoFinalDataSetTableAdapters.userTableAdapter();
-            this.tableAdapterManager = new TrabajoFinal.TrabajoFinalDataSetTableAdapters.TableAdapterManager();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.userDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.trabajoFinalDataSet = new TrabajoFinal.TrabajoFinalDataSet();
             this.groupNewUser = new System.Windows.Forms.GroupBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtNewPassword = new System.Windows.Forms.TextBox();
@@ -86,20 +92,6 @@
             this.txtNewNickname = new System.Windows.Forms.TextBox();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupAllUsers = new System.Windows.Forms.GroupBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.userDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -112,21 +104,57 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtCodigoUser = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSearchUserForUpdate = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtSearchUserByCode = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSearchPassword = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtSearchEmail = new System.Windows.Forms.TextBox();
+            this.txtSearchFirstname = new System.Windows.Forms.TextBox();
+            this.txtSearchLastname = new System.Windows.Forms.TextBox();
+            this.txtSearchNickname = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupAllUsers = new System.Windows.Forms.GroupBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.userTableAdapter = new TrabajoFinal.TrabajoFinalDataSetTableAdapters.userTableAdapter();
+            this.tableAdapterManager = new TrabajoFinal.TrabajoFinalDataSetTableAdapters.TableAdapterManager();
+            this.label13 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trabajoFinalDataSet)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trabajoFinalDataSet)).BeginInit();
             this.groupNewUser.SuspendLayout();
             this.tabPage8.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -391,30 +419,6 @@
             this.groupLogin.TabStop = false;
             this.groupLogin.Text = "Iniciar Sesion";
             // 
-            // userBindingSource
-            // 
-            this.userBindingSource.DataMember = "user";
-            this.userBindingSource.DataSource = this.trabajoFinalDataSet;
-            // 
-            // trabajoFinalDataSet
-            // 
-            this.trabajoFinalDataSet.DataSetName = "TrabajoFinalDataSet";
-            this.trabajoFinalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // userTableAdapter
-            // 
-            this.userTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.card_transactionTableAdapter = null;
-            this.tableAdapterManager.card_typeTableAdapter = null;
-            this.tableAdapterManager.cardTableAdapter = null;
-            this.tableAdapterManager.customerTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = TrabajoFinal.TrabajoFinalDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.userTableAdapter = this.userTableAdapter;
-            // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage4);
@@ -424,7 +428,7 @@
             this.tabControl2.Location = new System.Drawing.Point(0, 31);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1023, 538);
+            this.tabControl2.Size = new System.Drawing.Size(1023, 362);
             this.tabControl2.TabIndex = 32;
             this.tabControl2.Visible = false;
             // 
@@ -434,7 +438,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1015, 512);
+            this.tabPage4.Size = new System.Drawing.Size(1015, 336);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "Usuarios";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -464,6 +468,78 @@
             this.tabPage1.Text = "Nuevo";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // userDataGridView
+            // 
+            this.userDataGridView.AllowUserToAddRows = false;
+            this.userDataGridView.AllowUserToOrderColumns = true;
+            this.userDataGridView.AutoGenerateColumns = false;
+            this.userDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.userDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewCheckBoxColumn1});
+            this.userDataGridView.DataSource = this.userBindingSource;
+            this.userDataGridView.Location = new System.Drawing.Point(414, 8);
+            this.userDataGridView.Name = "userDataGridView";
+            this.userDataGridView.Size = new System.Drawing.Size(576, 279);
+            this.userDataGridView.TabIndex = 27;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_user";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo de Usuario";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "date_created";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Fecha Creacion";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "user_nickname";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nombre de Usuario";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "user_email";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Correo electronico";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "user_firstname";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Nombres";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "user_lastname";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Apellidos";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "isEmployee";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "¿Es empleado?";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataMember = "user";
+            this.userBindingSource.DataSource = this.trabajoFinalDataSet;
+            // 
+            // trabajoFinalDataSet
+            // 
+            this.trabajoFinalDataSet.DataSetName = "TrabajoFinalDataSet";
+            this.trabajoFinalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // groupNewUser
             // 
             this.groupNewUser.Controls.Add(this.lblPassword);
@@ -480,7 +556,7 @@
             this.groupNewUser.Controls.Add(this.btnNewUser);
             this.groupNewUser.Location = new System.Drawing.Point(6, 8);
             this.groupNewUser.Name = "groupNewUser";
-            this.groupNewUser.Size = new System.Drawing.Size(397, 324);
+            this.groupNewUser.Size = new System.Drawing.Size(397, 279);
             this.groupNewUser.TabIndex = 24;
             this.groupNewUser.TabStop = false;
             this.groupNewUser.Text = "Nuevo Usuario";
@@ -598,127 +674,6 @@
             this.tabPage8.Text = "Eliminar";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(996, 468);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Editar";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupAllUsers);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(996, 468);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ver Usuarios";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // groupAllUsers
-            // 
-            this.groupAllUsers.Location = new System.Drawing.Point(3, 6);
-            this.groupAllUsers.Name = "groupAllUsers";
-            this.groupAllUsers.Size = new System.Drawing.Size(580, 239);
-            this.groupAllUsers.TabIndex = 31;
-            this.groupAllUsers.TabStop = false;
-            this.groupAllUsers.Text = "Todos los usuarios";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(665, 512);
-            this.tabPage5.TabIndex = 1;
-            this.tabPage5.Text = "Clientes";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(665, 512);
-            this.tabPage6.TabIndex = 2;
-            this.tabPage6.Text = "Tarjetas";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(665, 512);
-            this.tabPage7.TabIndex = 3;
-            this.tabPage7.Text = "Reportes";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // userDataGridView
-            // 
-            this.userDataGridView.AllowUserToAddRows = false;
-            this.userDataGridView.AllowUserToOrderColumns = true;
-            this.userDataGridView.AutoGenerateColumns = false;
-            this.userDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.userDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewCheckBoxColumn1});
-            this.userDataGridView.DataSource = this.userBindingSource;
-            this.userDataGridView.Location = new System.Drawing.Point(414, 8);
-            this.userDataGridView.Name = "userDataGridView";
-            this.userDataGridView.Size = new System.Drawing.Size(576, 279);
-            this.userDataGridView.TabIndex = 27;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_user";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo de Usuario";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "date_created";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Fecha Creacion";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "user_nickname";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Nombre de Usuario";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "user_email";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Correo electronico";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "user_firstname";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Nombres";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "user_lastname";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Apellidos";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "isEmployee";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "¿Es empleado?";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -734,9 +689,9 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewCheckBoxColumn2});
             this.dataGridView1.DataSource = this.userBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(414, 72);
+            this.dataGridView1.Location = new System.Drawing.Point(414, 6);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(576, 279);
+            this.dataGridView1.Size = new System.Drawing.Size(576, 272);
             this.dataGridView1.TabIndex = 29;
             // 
             // dataGridViewTextBoxColumn5
@@ -786,9 +741,9 @@
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtCodigoUser);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(6, 72);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(397, 324);
+            this.groupBox1.Size = new System.Drawing.Size(397, 272);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Eliminar Usuario";
@@ -811,18 +766,316 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(178, 231);
+            this.button1.Location = new System.Drawing.Point(178, 72);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 13;
             this.button1.Text = "Eliminar usuario";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dataGridView2);
+            this.tabPage3.Controls.Add(this.groupBox2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(996, 468);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Editar";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToOrderColumns = true;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewCheckBoxColumn3});
+            this.dataGridView2.DataSource = this.userBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(414, 6);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(576, 279);
+            this.dataGridView2.TabIndex = 29;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "id_user";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Codigo de Usuario";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "date_created";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Fecha Creacion";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "user_nickname";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Nombre de Usuario";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "user_email";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Correo electronico";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "user_firstname";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Nombres";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "user_lastname";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Apellidos";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewCheckBoxColumn3
+            // 
+            this.dataGridViewCheckBoxColumn3.DataPropertyName = "isEmployee";
+            this.dataGridViewCheckBoxColumn3.HeaderText = "¿Es empleado?";
+            this.dataGridViewCheckBoxColumn3.Name = "dataGridViewCheckBoxColumn3";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnSearchUserForUpdate);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.txtSearchUserByCode);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.txtSearchPassword);
+            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.txtSearchEmail);
+            this.groupBox2.Controls.Add(this.txtSearchFirstname);
+            this.groupBox2.Controls.Add(this.txtSearchLastname);
+            this.groupBox2.Controls.Add(this.txtSearchNickname);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Location = new System.Drawing.Point(6, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(397, 279);
+            this.groupBox2.TabIndex = 28;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Editar Usuario";
+            // 
+            // btnSearchUserForUpdate
+            // 
+            this.btnSearchUserForUpdate.Location = new System.Drawing.Point(284, 16);
+            this.btnSearchUserForUpdate.Name = "btnSearchUserForUpdate";
+            this.btnSearchUserForUpdate.Size = new System.Drawing.Size(100, 23);
+            this.btnSearchUserForUpdate.TabIndex = 29;
+            this.btnSearchUserForUpdate.Text = "Buscar usuario";
+            this.btnSearchUserForUpdate.UseVisualStyleBackColor = true;
+            this.btnSearchUserForUpdate.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(71, 23);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(97, 13);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Codigo de Usuario:";
+            // 
+            // txtSearchUserByCode
+            // 
+            this.txtSearchUserByCode.Location = new System.Drawing.Point(178, 16);
+            this.txtSearchUserByCode.Name = "txtSearchUserByCode";
+            this.txtSearchUserByCode.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchUserByCode.TabIndex = 27;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(71, 159);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 13);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Password:";
+            // 
+            // txtSearchPassword
+            // 
+            this.txtSearchPassword.Location = new System.Drawing.Point(178, 152);
+            this.txtSearchPassword.Name = "txtSearchPassword";
+            this.txtSearchPassword.PasswordChar = '*';
+            this.txtSearchPassword.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchPassword.TabIndex = 25;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(159, 177);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(99, 17);
+            this.checkBox1.TabIndex = 24;
+            this.checkBox1.Text = "¿Es empleado?";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(71, 127);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 13);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Apellidos:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(71, 101);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Nombres:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(71, 75);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(96, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Correo electronico:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(71, 49);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(101, 13);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Nombre de Usuario:";
+            // 
+            // txtSearchEmail
+            // 
+            this.txtSearchEmail.Location = new System.Drawing.Point(178, 68);
+            this.txtSearchEmail.Name = "txtSearchEmail";
+            this.txtSearchEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchEmail.TabIndex = 18;
+            // 
+            // txtSearchFirstname
+            // 
+            this.txtSearchFirstname.Location = new System.Drawing.Point(178, 94);
+            this.txtSearchFirstname.Name = "txtSearchFirstname";
+            this.txtSearchFirstname.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchFirstname.TabIndex = 17;
+            // 
+            // txtSearchLastname
+            // 
+            this.txtSearchLastname.Location = new System.Drawing.Point(178, 120);
+            this.txtSearchLastname.Name = "txtSearchLastname";
+            this.txtSearchLastname.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchLastname.TabIndex = 16;
+            // 
+            // txtSearchNickname
+            // 
+            this.txtSearchNickname.Location = new System.Drawing.Point(178, 42);
+            this.txtSearchNickname.Name = "txtSearchNickname";
+            this.txtSearchNickname.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchNickname.TabIndex = 14;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(178, 200);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Actualizar usuario";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.groupAllUsers);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(996, 468);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Ver Usuarios";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupAllUsers
+            // 
+            this.groupAllUsers.Location = new System.Drawing.Point(3, 6);
+            this.groupAllUsers.Name = "groupAllUsers";
+            this.groupAllUsers.Size = new System.Drawing.Size(580, 239);
+            this.groupAllUsers.TabIndex = 31;
+            this.groupAllUsers.TabStop = false;
+            this.groupAllUsers.Text = "Todos los usuarios";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1015, 336);
+            this.tabPage5.TabIndex = 1;
+            this.tabPage5.Text = "Clientes";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1015, 336);
+            this.tabPage6.TabIndex = 2;
+            this.tabPage6.Text = "Tarjetas";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(1015, 336);
+            this.tabPage7.TabIndex = 3;
+            this.tabPage7.Text = "Reportes";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // userTableAdapter
+            // 
+            this.userTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.card_transactionTableAdapter = null;
+            this.tableAdapterManager.card_typeTableAdapter = null;
+            this.tableAdapterManager.cardTableAdapter = null;
+            this.tableAdapterManager.customerTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = TrabajoFinal.TrabajoFinalDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userTableAdapter = this.userTableAdapter;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(1, 562);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.TabIndex = 33;
+            this.label13.Text = "label13";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 575);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupLogin);
@@ -836,20 +1089,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupLogin.ResumeLayout(false);
             this.groupLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trabajoFinalDataSet)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.userDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trabajoFinalDataSet)).EndInit();
             this.groupNewUser.ResumeLayout(false);
             this.groupNewUser.PerformLayout();
             this.tabPage8.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.userDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -939,6 +1196,31 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtCodigoUser;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtSearchPassword;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtSearchEmail;
+        private System.Windows.Forms.TextBox txtSearchFirstname;
+        private System.Windows.Forms.TextBox txtSearchLastname;
+        private System.Windows.Forms.TextBox txtSearchNickname;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtSearchUserByCode;
+        private System.Windows.Forms.Button btnSearchUserForUpdate;
+        private System.Windows.Forms.Label label13;
     }
 }
 
