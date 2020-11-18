@@ -17,7 +17,7 @@ namespace TrabajoFinal
         public String UserRoot = "root";
         public String PasswordRoot = "root";
         public int intentosFallidos = 3;
-        ///OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\acces\\Documents\\xampp\\htdocs\\TrabajoFinal\\TrabajoFinal\\bin\\Debug\\TrabajoFinal.mdb");
+        OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Daniel\\Desktop\\Proyecto grupal\\TrabajoFinal\\TrabajoFinal\\TrabajoFinal.mdb");
 
         public Form1()
         {
@@ -25,14 +25,14 @@ namespace TrabajoFinal
             this.CenterToScreen();
             menuStrip1.Visible = false;
             this.hideAllGroupElements();
-            /*try
+            try
             {
                 cn.Open();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: Conexion a la base de datos no establecida" + ex);
-            }*/
+            }
         }
         private void hideAllGroupElements() {
             /*groupNewUser.Visible = false;
