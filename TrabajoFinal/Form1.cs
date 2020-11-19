@@ -34,6 +34,19 @@ namespace TrabajoFinal
                 MessageBox.Show("Error: Conexion a la base de datos no establecida" + ex);
             }
         }
+        void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            /*current = (sender as TabControl).SelectedTab;
+            String TabName = current.ToString().Replace("TabPage: {","").Replace("}","");
+            if(TabName == "Editar") {
+                txtSearchNickname.Enabled= false;
+                txtSearchEmail.Enabled = false;
+                txtSearchFirstname.Enabled = false;
+                txtSearchLastname.Enabled = false;
+                txtSearchPassword.Enabled = false;
+            }
+            label13.Text = TabName;*/
+        }
         private void hideAllGroupElements() {
             /*groupNewUser.Visible = false;
             groupAllUsers.Visible = false;*/
@@ -121,8 +134,15 @@ namespace TrabajoFinal
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'trabajoFinalDataSet.card_type' Puede moverla o quitarla según sea necesario.
+            this.card_typeTableAdapter.Fill(this.trabajoFinalDataSet.card_type);
+            // TODO: esta línea de código carga datos en la tabla 'trabajoFinalDataSet.card' Puede moverla o quitarla según sea necesario.
+            this.cardTableAdapter.Fill(this.trabajoFinalDataSet.card);
+            // TODO: esta línea de código carga datos en la tabla 'trabajoFinalDataSet.card_transaction' Puede moverla o quitarla según sea necesario.
+            this.card_transactionTableAdapter.Fill(this.trabajoFinalDataSet.card_transaction);
             // TODO: esta línea de código carga datos en la tabla 'trabajoFinalDataSet.user' Puede moverla o quitarla según sea necesario.
             this.userTableAdapter.Fill(this.trabajoFinalDataSet.user);
+            this.customerTableAdapter.Fill(this.trabajoFinalDataSet.customer);
 
         }
 
@@ -162,6 +182,97 @@ namespace TrabajoFinal
             else
             {
                 MessageBox.Show("Todos los campos son requeridos", "Campos requeridos");
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            String codigoUser = txtCodigoUser.Text;
+            if (codigoUser!="") {
+                DialogResult result = MessageBox.Show("¿Seguro que deseas eliminar a este usuario?","Confirmacion de accion", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes) {
+                    this.userTableAdapter.DeleteUser(int.Parse(codigoUser));
+                    this.userTableAdapter.Fill(this.trabajoFinalDataSet.user);
+                    MessageBox.Show("Usuario eliminado con exito", "Operacion exitosa");
+                    txtCodigoUser.Text = "";
+                }
+                else {
+                    MessageBox.Show("No ha pasado nada, la operacion fue cancelada.", "Todo bien");
+                }
+            }
+            else {
+                MessageBox.Show("El codigo de usuario es requerido","Campos obligatorios");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            String codigoUser = txtSearchUserByCode.Text;
+            if (codigoUser!="") {
+                this.userTableAdapter.SearchUserById(this.trabajoFinalDataSet.user, int.Parse(codigoUser));
+                //this.userTableAdapter.Fill(this.trabajoFinalDataSet.user);
+                MessageBox.Show(this.trabajoFinalDataSet.user.ToString());
+                txtSearchNickname.Enabled = true;
+                txtSearchEmail.Enabled = true;
+                txtSearchFirstname.Enabled = true;
+                txtSearchLastname.Enabled = true;
+                txtSearchPassword.Enabled = true;
+            }
+            else {
+                MessageBox.Show("El codigo del usuario es requerido","Campos requeridos");
+            }
+        }
+       
+        private void searchCustomerById_Click(object sender, EventArgs e)
+        {
+            String codigoCliente = txtSearchClienteByCode.Text;
+            if (codigoCliente != "")
+            {
+                this.customerTableAdapter.SearchClienteById(this.trabajoFinalDataSet.customer, int.Parse(codigoCliente));
+                MessageBox.Show(this.trabajoFinalDataSet.customer.ToString());
+            }
+            else
+            {
+                MessageBox.Show("El codigo de cliente es requerido", "Campos requeridos");
+            }
+        }
+
+        private void NewCardCustomer_Click_1(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedItem.ToString()!="" && comboBox1.SelectedItem.ToString()!="" && textBox4.Text!="")
+            {
+                int percentage_credit;
+                if(int.Parse(textBox4.Text) >= 1000)
+                {
+                    percentage_credit = 10;
+                }
+                else
+                {
+                    percentage_credit = 20;
+                }
+                var fechaActual = DateTime.Now;
+                this.cardTableAdapter.InsertCard(int.Parse(comboBox2.Text), fechaActual.Date,  int.Parse(comboBox1.Text), percentage_credit, decimal.Parse(textBox4.Text));
+                this.cardTableAdapter.Fill(this.trabajoFinalDataSet.card);
+                MessageBox.Show("Registro almacenado con exito ", "Operacion exitosa");
+            }
+        }
+
+        private void generarTransaccion_Click(object sender, EventArgs e)
+        {
+            if(idTarjeta.Text != "" && montoTransaccion.Text !="")
+            {
+                int puntoTransaccion;
+                if (int.Parse(montoTransaccion.Text) >= 500)
+                {
+                    puntoTransaccion = 50;
+                }
+                else
+                {
+                    puntoTransaccion = 10;
+                }
+                var fechaActual = DateTime.Now;
+                this.card_transactionTableAdapter.InsertTransaction(fechaActual.Date, int.Parse(idTarjeta.Text), decimal.Parse(montoTransaccion.Text), puntoTransaccion);
+                this.card_transactionTableAdapter.Fill(this.trabajoFinalDataSet.card_transaction);
             }
         }
     }
