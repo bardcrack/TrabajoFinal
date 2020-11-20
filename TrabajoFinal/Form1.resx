@@ -1059,6 +1059,9 @@
   <metadata name="folderBrowserDialog2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>357, 56</value>
   </metadata>
+  <metadata name="card_transactionBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>506, 134</value>
+  </metadata>
   <metadata name="userBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>406, 17</value>
   </metadata>
@@ -1070,6 +1073,45 @@
   </metadata>
   <metadata name="trabajoFinalDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>248, 17</value>
+  </metadata>
+  <metadata name="cardBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>886, 56</value>
+  </metadata>
+  <metadata name="cardBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>886, 56</value>
+  </metadata>
+  <metadata name="card_typeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>526, 56</value>
+  </metadata>
+  <metadata name="card_typeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>526, 56</value>
+  </metadata>
+  <metadata name="card_transactionBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>178, 95</value>
+  </metadata>
+  <metadata name="card_transactionBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>178, 95</value>
+  </metadata>
+  <metadata name="card1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>777, 95</value>
+  </metadata>
+  <metadata name="card1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>777, 95</value>
+  </metadata>
+  <metadata name="trabajoFinalDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>612, 95</value>
+  </metadata>
+  <metadata name="trabajoFinalDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>612, 95</value>
+  </metadata>
+  <metadata name="card_transactionBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>506, 134</value>
+  </metadata>
+  <metadata name="cardBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>732, 134</value>
+  </metadata>
+  <metadata name="cardBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>732, 134</value>
   </metadata>
   <metadata name="userTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>559, 17</value>
@@ -1077,7 +1119,101 @@
   <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>69</value>
+  <metadata name="card_typeTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>709, 56</value>
   </metadata>
+  <metadata name="cardTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>30, 95</value>
+  </metadata>
+  <metadata name="card_transactionTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>398, 95</value>
+  </metadata>
+  <metadata name="card1TableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <metadata name="card1BindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>172, 134</value>
+  </metadata>
+  <metadata name="card1BindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>339, 134</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>92</value>
+  </metadata>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////fz//8GZ//+TS///ij3//49G//+ueP//5dT///7+////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////+3h///cxb//3ET//9xEv//cRL//3MW//9zF///p23//9i+///07f//////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////u4v//rHX//3Yc//9uDv//mFP//6px//+nbP//hTX//24N//9zFv//cRP//3MW//+I
+        OP//pGj//8GY///hzf//+fX/////////////////////////////////////////////////////////
+        ////////////////////7+X//3wl//9zFv//bg3//8CW///////////////////+/v//0bP//4g5//9u
+        Dv//bQ3//3AR//9zFf//cxb//3ET//93Hf//kEf//7B7///cxf//+fX///7+////////////////////
+        //////////////////////////////+3h///chT//3sj//+4if///Pv/////////////////////////
+        //////////bw///ZwP//uIj//5hT//96Iv//bAr//24O//9xEv//cxb//3IU//9yFf//n1///9S5///9
+        +////////////////////////////////////////6Ro//93Hf//8+v/////////////////////////
+        //////////////////////////////////////////79///u4///zq3//6Zr//9/Kv//bg3//3AQ//9z
+        Ff//chT//4As//+6jf//9/L/////////////////////////////sH3//6Fj////////////////////
+        ///////////////59v//u43//7qM///Cmv//07b///Dm///+/f////////////////////////79///t
+        4f//tIP//34o//9tDf//cRP//3MW//+BLv//v5X///Tt///////////////////28f//pmz///7+////
+        /////////////////////////8Se///NrP//7uP//+XT///Stf//s4H//6du//+obv//vpP//+fX///+
+        /v///////////////////fv//9S4//+JO///bg3//3ET//9zFv//eyT//8Wf///+/v////////////+z
+        gf//wpr///7+////////////////////////oWL///79//////////////////////////////38///m
+        1f//uoz//6Bi///Env//+fb///////////////////38///NrP//jkP//20N//9xE///cxb//8ik////
+        /////////8GY//9uDv//+PT///////////////////Ts//+ueP//////////////////////////////
+        /////////////////////fz//9i///+kaP//tIL///r2///////////////////+/f//xJz//24N//9y
+        FP//n2D/////////////lE3//4w/////////////////////////28L//3sk//+jZf//soD//8GY///J
+        pv//1br//9e8///XvP//17z//9O2///Hof//tob//5dS//9wEf//vpL////////////////////////+
+        /v//jED//3MW//+0gv////////////92HP//uYv////////////////////////o2f//kUj//3QX//9v
+        D///bAr//3AR//9vD///bw///28P//9vD///bg7//20N//+ALP//oGH//8ik///7+P//////////////
+        //////////Dm//93HP//l1P///n1/////////////3MX///cxP//////////////////////////////
+        /////f3///bw///p2v//3sn//9e8///XvP//17z//9i+///k0///8ur///7+////////////////////
+        ///////////////k0///fyv//7OB///7+f//////////////////gS3//9i9////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////j0///ZwP//tIP//6Vp///k0/////////////////////////////+MQP//y6n/////////
+        ///////////////u5P//+fb///7+//////////////////////////////z6///PsP//7eH//93G///M
+        qv//v5X//6t0//+kZ///qXD//8ei///n2P///v7//////////////////////////////////5JL//++
+        k////////////////////////59g//+qcv//qXD//7B7///fy////v7///////////////////v5///j
+        0P//mVX//2sJ//9wEf//qnP///n2////////////////////////////////////////////////////
+        ////lE3//7yQ////////////////////////rHX//+TS///+/f//9O3//76T//+kZ///wJf///Ho////
+        ////////////////////4s///4U0//9wEv//k0z///v5////////////////////////////////////
+        //////////////+UTf//vJD////////////////////////Mq///cxb//3QY//92G///dhv//3UZ//9o
+        BP//bAr//5hT///z6///////////////////+fX//4o8//9yFf//yKT/////////////////////////
+        ////////////////////9e///3ge///Cmv/////////////////////////////7+P//693//+rd///q
+        3f//6t3//+ve///x6P///v7/////////////////////////////y6j//3AR//+6jf//////////////
+        //////////////////////////////+/lf//dhv///fy////////////////////////////////////
+        /////////////////////////////////////////////////////////+7k//+CLv//k0v///fz////
+        /////////////////////////////////////////6lv//+hY///////////////////////////////
+        /////////////////////f3///n1///28P//9O3//+PQ///XvP//yKT//76T//+lav//mlb//76T///7
+        +P//////////////////////////////////////////////////5tb//4Iv///Dm///9/P///7+///+
+        /v//9O3//8ag//+lav//pWr//6x1//+ueP//qXH//6py//+zgf//wJb//9K0///Zwf//5tf///n2////
+        ////////////////////////////////////////////////////////////////////+vb//8yq//+o
+        b///qnH//6t0//+rdP//2b////z6////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
 </root>

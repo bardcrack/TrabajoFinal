@@ -8,4 +8,3 @@ C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\Trabaj
 C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.csproj.GenerateResource.Cache
 C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.exe
 C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\obj\Debug\TrabajoFinal.pdb
-C:\Users\acces\Documents\xampp\htdocs\TrabajoFinal\TrabajoFinal\bin\Debug\TrabajoFinal.mdb
